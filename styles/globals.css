@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+  .navLink {
+    @apply block hover:underline decoration-orange-400 text-center decoration-2 active:underline underline-offset-8 rounded-full md:p-4 p-2 cursor-pointer capitalize hover:scale-110 transition-transform duration-200 ease-out;
+  }
+}

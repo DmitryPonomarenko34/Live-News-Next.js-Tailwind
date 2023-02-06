@@ -5,7 +5,7 @@ export const fetchNews = async (
   category?: Categories | string,
   keywords?: string,
   isDynamic?: boolean,
-) => {
+) => {  
   const query = gql`
     query myQuery(
       $access_key: String!
@@ -15,7 +15,7 @@ export const fetchNews = async (
       myQuery(
         access_key: $access_key
         categories: $categories
-        countries: "us"
+        countries: "gb"
         sort: "published_desc"
         keywords: $keywords
       ) {
@@ -47,7 +47,7 @@ export const fetchNews = async (
     next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
     headers: {
       "Content-Type": "application/json",
-      Authorization: `APIKey ${process.env.STEPZEN_API_KEY}`
+      Authorization: `apikey ${process.env.STEPZEN_API_KEY}`
     },
     body: JSON.stringify({
       query,

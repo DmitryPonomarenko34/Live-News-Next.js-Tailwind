@@ -1,6 +1,3 @@
-import { NewspaperIcon } from "@heroicons/react/24/solid";
-import { categories } from "../constants"
-import { fetchNews } from "../lib/fetchNews";
 import data from '../data.json';
 import NewsList from "./NewsList";
 

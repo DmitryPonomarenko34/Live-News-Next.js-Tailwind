@@ -1,3 +1,5 @@
+import ReadMoreButton from "./ReadMoreButton";
+
 type Props = {
   article: Article;
 }
@@ -22,6 +24,7 @@ export default function Article({article}: Props) {
             <p>{article.source}</p>
             <p>{article.published_at}</p>
           </footer>
+          <ReadMoreButton article={article}/>
         </div>
       </div>
     </article>

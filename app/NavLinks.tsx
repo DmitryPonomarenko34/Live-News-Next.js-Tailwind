@@ -18,7 +18,7 @@ export default function NavLinks() {
       <ul className="grid grid-cols-4 md:grid-cols-7 text-xs md:text-sm gap-4 pb-10">
         {categories.map((category) => (
           <li key={category}>
-            <NavLink category={category} isActive={isActive(category)} />
+            <NavLink category={category} isActive={isActive(category)}/>
           </li>
         ))}
       </ul>

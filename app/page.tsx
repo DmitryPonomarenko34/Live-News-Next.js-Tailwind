@@ -1,4 +1,6 @@
+import { categories } from '../constants';
 import data from '../data.json';
+import { fetchNews } from '../lib/fetchNews';
 import NewsList from "./NewsList";
 
 export default async function HomePage() {

@@ -8,7 +8,7 @@ type Props = {
 
 export default function NavLink({category, isActive}: Props) {
   return (
-    <Link href={`/news/${category}`} className={`navLink ${isActive && 'disable pointer-events-none underline decoration-orange-400 underline-offset-4 font-bold text-lg'}`} prefetch={false}>
+    <Link href={`/news/${category}`} className={`navLink ${isActive && 'disable pointer-events-none underline decoration-orange-400 underline-offset-4 font-bold text-lg'}`}>
       {category}
     </Link>
   )

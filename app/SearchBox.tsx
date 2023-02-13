@@ -12,7 +12,7 @@ export default function SearchBox() {
 
     if (!input) return;
 
-    router.push(`/search/${input}`);
+    router.push(`/search?term=${input}`);
   }
 
   return (
@@ -24,7 +24,7 @@ export default function SearchBox() {
         value={input} 
         onChange={(e) => setInput(e.target.value)}
       />
-      <button className="text-orange-400 disabled:text-gray-400" type="submit" disabled={!input}>
+      <button className="text-orange-400 disabled:text-gray-400" disabled={!input}>
         Search
       </button>
     </form>

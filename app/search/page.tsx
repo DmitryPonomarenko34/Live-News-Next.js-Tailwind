@@ -9,13 +9,13 @@ type Props = {
 }
 
 export default async function SearchPage({searchParams}: Props) {
-  // const news: NewsResponse = await fetchNews(
-  //   'general',
-  //   searchParams?.term,
-  //   true
-  // );
+  const news: NewsResponse = await fetchNews(
+    'general',
+    searchParams?.term,
+    true
+  );
 
-  const news: NewsResponse = data;
+  // const news: NewsResponse = data;
 
   return (
     <div>

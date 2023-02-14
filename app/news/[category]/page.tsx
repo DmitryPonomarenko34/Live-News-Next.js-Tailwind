@@ -10,8 +10,8 @@ type Props = {
 }
 
 export default async function NewsCategoryPage({params: {category}}: Props) {
-  // const news: NewsResponse = await fetchNews(category);
-  const news: NewsResponse = data;
+  const news: NewsResponse = await fetchNews(category);
+  // const news: NewsResponse = data;
 
   return (
     <div>
